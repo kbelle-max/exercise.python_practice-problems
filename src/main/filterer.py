@@ -1,5 +1,7 @@
 # Created by Leon Hunter at 12:10 PM 12/08/2020
 class Filterer(object):
+    def __init__(self):
+        
     def remove_characters(self, string_to_remove_from, characters_to_remove):
         ''' TODO - Implement solution
         Given 2 arguments:

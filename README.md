@@ -55,3 +55,4 @@
         * `python -m unittest discover -s ./src/test/ -p '*_test.py'`
 
 [![](./run-tests-cli.gif)](./run-tests-cli.gif)
+.tr
