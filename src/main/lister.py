@@ -36,7 +36,6 @@ class Lister(object):
         else:
             for idx in range(start,stop+1,step):
                 int_list.append(idx)
-            even_list=[]
             for i in int_list:
                 if i%2==0:
                     even_list.append(i)
@@ -54,10 +53,9 @@ class Lister(object):
         '''
         int_list=[]
         odd_list=[]
-        if stop==0:
-            odd_list.append(0)
+
         
-        else:
+        if stop !=0:
             for idx in range(start,stop+1,step):
                 int_list.append(idx)
             for i in int_list:
