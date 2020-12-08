@@ -1,4 +1,3 @@
-h
 # Created by Leon Hunter at 12:10 PM 12/08/2020
 class Filterer(object):
         

@@ -13,7 +13,6 @@ class Lister(object):
         ls=[]
         if stop==0:
             ls.append(0)
-            return 0
         else:
             for idx in range(start,stop,step):
                 ls.append(idx)
@@ -33,7 +32,7 @@ class Lister(object):
         even_list=[]
         if stop==0:
             even_list.append(0)
-            return even_list
+    
         else:
             for idx in range(start,stop,step):
                 int_list.append(idx)
@@ -41,7 +40,7 @@ class Lister(object):
             for i in int_list:
                 if i%2==0:
                     even_list.append(i)
-            return even_list
+        return even_list
 
     def get_odd_list(self,start, stop, step):
         ''' TODO - Implement solution
@@ -57,11 +56,11 @@ class Lister(object):
         odd_list=[]
         if stop==0:
             odd_list.append(0)
-            return odd_list
+        
         else:
             for idx in range(start,stop,step):
                 int_list.append(idx)
             for i in int_list:
                 if i%2!=0:
-                odd_list.append(i)
-            return odd_list
+                    odd_list.append(i)
+        return odd_list
