@@ -16,7 +16,7 @@ class Lister(object):
         else:
             for idx in range(start,stop+1,step):
                 ls.append(idx)
-            return ls
+        return ls
 
     def get_even_list(self,start, stop, step):
         ''' TODO - Implement solution
