@@ -1,6 +1,6 @@
+h
 # Created by Leon Hunter at 12:10 PM 12/08/2020
 class Filterer(object):
-    def __init__(self):
         
     def remove_characters(self, string_to_remove_from, characters_to_remove):
         ''' TODO - Implement solution
@@ -17,7 +17,7 @@ class Filterer(object):
                 parsed_string+=letter
         return parsed_string
 
-    def remove_vowels(self, string_to_remove_from):
+    def remove_vowels( self,string_to_remove_from):
         ''' TODO - Implement solution
         Given 1 arguments:
             `string_to_remove_from`, representative of the string to remove the characters from
@@ -25,7 +25,7 @@ class Filterer(object):
             (case insensitive)
             a string with each character in the list `['a','e',i','o','u']` removed from the string
         '''
-        vowels=['a','e','i','o','u']
+        vowels=['a','e','i','o','u','A','E','I','O','U']
         parsed_string=''
         for letter in string_to_remove_from:
             if letter not in vowels:
@@ -41,6 +41,7 @@ class Filterer(object):
             a string with each character in the list `['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z']` removed from the string
         '''
         cons=['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z']
+        cons.extend([con.upper()for con in cons])
         parsed_string=''
         for letter in string_to_remove_from:
             if letter not in cons:

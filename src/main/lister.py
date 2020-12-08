@@ -1,6 +1,6 @@
 # Created by Leon Hunter at 12:10 PM 12/08/2020
 class Lister(object):
-    def get_integer_list(self, start, stop, step):
+    def get_integer_list(self,start, stop, step):
         ''' TODO - Implement solution
         Given 3 integers,
             `start`, `stop`, and `step`
@@ -9,12 +9,17 @@ class Lister(object):
             incrementing by `step`,
             up to and including `stop`
         '''
+        
         ls=[]
-        for idx in range(start,stop,step):
-            ls.append(idx)
-        return ls
+        if stop==0:
+            ls.append(0)
+            return 0
+        else:
+            for idx in range(start,stop,step):
+                ls.append(idx)
+            return ls
 
-    def get_even_list(self, start, stop, step):
+    def get_even_list(self,start, stop, step):
         ''' TODO - Implement solution
         Given 3 integers,
             `start`, `stop`, and `step`
@@ -26,16 +31,19 @@ class Lister(object):
         '''
         int_list=[]
         even_list=[]
-        for idx in range(start,stop,step):
-            int_list.append(idx)
-        
-        even_list=[]
-        for i in int_list:
-            if i%2==0:
-                even_list.append(i)
-        return even_list
+        if stop==0:
+            even_list.append(0)
+            return even_list
+        else:
+            for idx in range(start,stop,step):
+                int_list.append(idx)
+            even_list=[]
+            for i in int_list:
+                if i%2==0:
+                    even_list.append(i)
+            return even_list
 
-    def get_odd_list(self, start, stop, step):
+    def get_odd_list(self,start, stop, step):
         ''' TODO - Implement solution
         Given 3 integers,
             `start`, `stop`, and `step`
@@ -47,10 +55,13 @@ class Lister(object):
         '''
         int_list=[]
         odd_list=[]
-        for idx in range(start,stop,step):
-            int_list.append(idx)
-    
-        for i in int_list:
-            if i%2!=0:
+        if stop==0:
+            odd_list.append(0)
+            return odd_list
+        else:
+            for idx in range(start,stop,step):
+                int_list.append(idx)
+            for i in int_list:
+                if i%2!=0:
                 odd_list.append(i)
-        return odd_list
+            return odd_list
