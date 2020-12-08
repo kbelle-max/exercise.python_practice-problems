@@ -14,11 +14,11 @@ class Lister(object):
         if stop==0:
             ls.append(0)
         else:
-            for idx in range(start,stop,step):
+            for idx in range(start,stop+1,step):
                 ls.append(idx)
             return ls
 
-    def get_even_list(self,start, stop, step):
+    def get_even_list(self,start, stop+1, step):
         ''' TODO - Implement solution
         Given 3 integers,
             `start`, `stop`, and `step`
@@ -42,7 +42,7 @@ class Lister(object):
                     even_list.append(i)
         return even_list
 
-    def get_odd_list(self,start, stop, step):
+    def get_odd_list(self,start, stop+1, step):
         ''' TODO - Implement solution
         Given 3 integers,
             `start`, `stop`, and `step`
